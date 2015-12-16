@@ -36,8 +36,6 @@ mkdir /opt/project_env${PYVER}
 
 /opt/python${PYVER}/bin/pip3 install --upgrade pip
 
-/opt/python${PYVER}/bin/pip3 install virtualenv
-
 /opt/python${PYVER}/bin/pyvenv /opt/project_env${PYVER}
 
 source /opt/project_env${PYVER}/bin/activate
