@@ -1,6 +1,6 @@
 #!/bin/bash
 
-PYVER="2.7"
+PYVER="2.7.11"
 
 echo $PYVER
 
