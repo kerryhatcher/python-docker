@@ -6,9 +6,11 @@ machine:
 dependencies:
   override:
     - docker info
-    - docker build -t kerryhatcher/python .
+    - docker build -t kerryhatcher/python:latest .
     
-    
+test:
+  override:
+    - docker run -d kerryhatcher/python:latest;    
     
 deployment:
   hub:
