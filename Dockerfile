@@ -2,6 +2,7 @@
 FROM centos:7
 MAINTAINER Kerry Hatcher <kwhatcher@gmail.com>
 RUN yum update -y
+RUN yum install wget -y
 RUN curl -s https://setup.ius.io/ | bash
 RUN yum update -y
 RUN yum group install -y "Development tools"
