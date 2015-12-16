@@ -1,6 +1,6 @@
 #!/bin/bash
 
-PYVER="$1"
+PYVER="2.7"
 
 echo $PYVER
 
@@ -32,11 +32,11 @@ cd
 mkdir /opt/project_env${PYVER}
 
 
-/opt/python${PYVER}/bin/python -m ensurepip --upgrade
+/opt/python${PYVER}/bin/python2.7 -m ensurepip --upgrade
 
-/opt/python${PYVER}/bin/pip install --upgrade pip
+/opt/python${PYVER}/bin/pip2 install --upgrade pip
 
-/opt/python${PYVER}/bin/pip install virtualenv
+/opt/python${PYVER}/bin/pip2 install virtualenv
 
 /opt/python${PYVER}/bin/virtualenv /opt/project_env${PYVER}
 
