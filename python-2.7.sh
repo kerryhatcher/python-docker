@@ -1,5 +1,7 @@
 #!/bin/bash
 
+rm -rf /opt/python2.7.11
+rm -rf /opt/project_env2.7.11
 
 ### Python 2.7.11
 
