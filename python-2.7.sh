@@ -32,21 +32,21 @@ cd
 mkdir /opt/project_env${PYVER}
 
 
-/opt/python${PYVER}/bin/python2.7 -m ensurepip --upgrade
+/opt/python${PYVER}/bin/python -m ensurepip --upgrade
 
-/opt/python${PYVER}/bin/pip2 install --upgrade pip
+/opt/python${PYVER}/bin/pip install --upgrade pip
 
-/opt/python${PYVER}/bin/pip2 install virtualenv
+/opt/python${PYVER}/bin/pip install virtualenv
 
 /opt/python${PYVER}/bin/virtualenv /opt/project_env${PYVER}
 
 source /opt/project_env${PYVER}/bin/activate
 
-/opt/project_env${PYVER}/bin/pip install --upgrade pip
+/opt/project_env${PYVER}/bin/pip2.7 install --upgrade pip
 
-/opt/project_env${PYVER}/bin/pip freeze | xargs opt/project_env${PYVER}/bin/pip2.7 install --upgrade
+/opt/project_env${PYVER}/bin/pip2.7 freeze | xargs opt/project_env${PYVER}/bin/pip2.7 install --upgrade
 
-/opt/project_env${PYVER}/bin/pip install pyopenssl ndg-httpsclient pyasn1
+/opt/project_env${PYVER}/bin/pip2.7 install pyopenssl ndg-httpsclient pyasn1
 
 
 deactivate
